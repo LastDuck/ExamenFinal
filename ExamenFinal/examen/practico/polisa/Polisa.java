@@ -4,12 +4,14 @@ public class Polisa {
 private String nombre;
 private String descripcion;
 private int anioVigente;
+private String codigoPoliza;
 private int valorPoliza;
 
-public  Polisa(String nombre,String descripcion, int anioVigente,int valorPoliza) {
+public  Polisa(String nombre,String descripcion, int anioVigente,String codigoPoliza,int valorPoliza) {
 	this.nombre=nombre;
 	this.descripcion=descripcion;
 	this.anioVigente=anioVigente;
+	this.codigoPoliza=codigoPoliza;
 	this.valorPoliza=valorPoliza;
 }
 public String getNombre() {
@@ -35,6 +37,12 @@ public int getValorPoliza() {
 }
 public void setValorPoliza(int valorPoliza) {
 	this.valorPoliza = valorPoliza;
+}
+public String getCodigoPoliza() {
+	return codigoPoliza;
+}
+public void setCodigoPoliza(String codigoPoliza) {
+	this.codigoPoliza = codigoPoliza;
 }
 	
 }
