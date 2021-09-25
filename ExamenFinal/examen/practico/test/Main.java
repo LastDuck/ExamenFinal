@@ -72,12 +72,31 @@ public class Main {
 				
 			}else if(opcion==2) {
 				System.out.println("Código de Póliza");
-				String codigo=lector.nextLine();
+				String codigoB=lector.nextLine();
 				for(int i=0;i<NPoliza.length;i++) {
-					
+					Polisa L=NPoliza[i];
+					boolean Encontra=L.getCodigoPoliza().equals(codigoB);
+					if(Encontra==true) {
+						System.out.println("Valorde la Póliza");
+						int valor=lector.nextInt();
+						NPoliza[i].setValorPoliza(valor);
+					}else {
+						System.out.println("No se encontro codigo");
+					}
 				}
 				
 			}else if(opcion==3){
+				System.out.println("Código de Póliza");
+				String codigoB=lector.nextLine();
+				for(int i=0;i<NPoliza.length;i++) {
+					Polisa L=NPoliza[i];
+					boolean Encontra=L.getCodigoPoliza().equals(codigoB);
+					if(Encontra==true) {
+						System.out.println("Nombre"+NPoliza[i].getNombre()+"Ano"+NPoliza[i].getAnioVigente()+"Codigo Poliza:"+NPoliza[i].getCodigoPoliza()+"Valor poliza"+NPoliza[i].getValorPoliza());
+					}else {
+						System.out.println("No se encontro codigo");
+					}
+				}
 				
 			}else if (opcion==4) {
 				
